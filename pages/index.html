@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" href="../lib/bootstrap.css"/>
+  <link rel="stylesheet" href="../assets/style.css"/>
+</head>
+
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>flappy birdy!</h1>
+      <p>welcome &nbsp; to &nbsp; my &nbsp; game</p>
+    </div>
+    <div class="row">
+      <div class="col-md-8">
+        <p>clearly the best game around</p>
+        <p id="gameLink">
+          <div id="game"> </div>
+        </p>
+      </div>
+
+      <div class="col-md-4">
+        <p>  </p>
+        <ul class="nav nav-tabs">
+          <li role="presentation" id="scoresbtn"><a href="#">scores</a></li>
+          <li role="presentation" id="creditsbtn"><a href="#">credits</a></li>
+          <li role="presentation" id="helpbtn"><a href="#">help</a></li>
+        </ul>
+        <div>
+          <div id="content"></div>
+        </div>
+        <p>  </p>
+      </div>
+    </div>
+    <div class="row">
+      <p>   </p>
+      <div class="col-md-4">
+        <img src="../assets/screenshotStart.png" class="img-rounded img-responsive" />
+      </div>
+      <div class="col-md-4">
+        <img src="../assets/screenshot.png" class="img-rounded img-responsive" />
+      </div>
+      <div class="col-md-4">
+        <img src="../assets/screenshotOver.png" class="img-rounded img-responsive" />
+      </div>
+    </div>
+    <p>  </p>
+    <div id="credits"><p>contributors</p></div>
+    <script src="../lib/jquery.js"></script>
+    <script src="../js/interactivity.js"></script>
+    <script src="../lib/phaser.min.js"></script>
+    <script src="../js/flappy.js"></script>
+  </body>

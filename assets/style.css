@@ -1,0 +1,82 @@
+.jumbotron h1{
+  color: white;
+  font-size: 100px;
+  font-style: bold;
+  font-family: "Ostrich Sans Inline";
+}
+
+.jumbotron p{
+  color: #DDF0FF;
+  font-size: 25px;
+  font-style: bold;
+  font-family: "8BitOperator JVE (Undertale Dialogue Font)";
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: url(../assets/sans.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+}
+
+p{
+  color: #DDF0FF;
+  font-size: 20px;
+  font-style: bold;
+  font-family: "Avenir";
+}
+
+li{
+  color: #DDF0FF;
+  font-size: 17px;
+  font-family: "Avenir";
+}
+
+.gold{
+  color: #BEA408;
+  font-style: bold;
+}
+
+.silver{
+  color: #D5D5D5;
+}
+
+.bronze{
+  color: #A25D0E;
+}
+
+#gameLink{
+  text-align: center;
+  border: 8px solid #1A5B8A;
+}
+
+body{
+  background-color: black;
+}
+
+.btn-group button {
+    background-color: #0F436A;
+    /* border: 1px solid green;  */
+    color: white;
+    padding: 10px 24px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+}
+
+
+.btn-group:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.btn-group button:hover {
+    background-color: #2E86C8;
+}
