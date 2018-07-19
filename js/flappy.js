@@ -51,12 +51,6 @@ function preload() {
 function create() {
   game.stage.setBackgroundColor("#070332");
   game.add.text(135,20,"welcome to my game",{font: "60px Langdon", fill: "#FFFFFF"});
-  text = game.add.text(135,220,"press enter to start",{font: "40px 8BitOperator JVE (Undertale Dialogue Font)", fill: "#FFFFFF"});
-  game.input.keyboard.addKey(Phaser.Keyboard.ENTER).onDown.remove(start);
-}
-
-function start(){
-  text.destroy();
   game.input.keyboard.addKey(Phaser.Keyboard.SPACEBAR).onDown.add(spaceHandler);
   game.add.text(8 ,20,"score :",{font: "25px Langdon", fill: "#FFFFFF"});
   labelScore = game.add.text(80,19,"0", {font: "30px Langdon", fill:"#FFFFFF"});
@@ -76,7 +70,7 @@ function start(){
     gasterInterval*Phaser.Timer.SECOND,
     generateGaster);
   game.time.events.loop(
-    heartInterval*Phaser.Timer.SECOND, 
+    heartInterval*Phaser.Timer.SECOND,
     generateHeart);
 }
 
@@ -173,6 +167,7 @@ function gameOver(){
     gameGravity = 200;
     game.paused = false;
     game.state.restart();
+    pipeInterval = 1.75;
   }
   else{
     endScreen();
